@@ -16,13 +16,19 @@ while(Number.isInteger(num1)===false){
     num1=parseInt(prompt("Let me know any number you want: "));
 }
 
-function fib(n){
-    if (n < 1){
-         return null;
+function fib(num1){
+    if (num1 == 0){
+         return num1;
     }
-    if (n < 3){
-        return 1;
+    else if (num1 == 1){
+        let r = "0, " + num1;
+        return r;
     }
+    else if (num1 == 2){
+        let r = "0, " + " 1 " + num1
+        return r;
+    }
+
     let elem1,elem2 = 1;
     let sum = 0;
     for (i=0; i<=n; i++){
@@ -32,6 +38,7 @@ function fib(n){
     return sum;
     }
 }
+
 console.log(fib(num1));
 
 // ○ Entrada:
