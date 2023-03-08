@@ -6,40 +6,37 @@
 // ○ Debe ser capaz de identificar si el dato de entrada es de tipo number, en caso contrario debe mandar un
 // mensaje de error y volver a solicitar el dato.
 // ○ Prueba tu programa con las siguientes combinaciones para asegurarte que funcione correctamente:
-let num1=parseInt(prompt("Let me know any number you want: "));
-let fibonacciArray=[];
-let fibonacciNum=0;
-let add=0;
 
-while(Number.isInteger(num1)===false){
-    alert("The last value wasn't an integer number, please try with an interger number");
-    num1=parseInt(prompt("Let me know any number you want: "));
+let fibonacciSerie=[0,1];
+var add = 0;
+var numFibonacci=parseInt(prompt("Let me know any number you want: "));
+
+while(Number.isInteger(numFibonacci)===false || numFibonacci === 0){
+    alert("The last value was incorrect, please try with an interger number which it is after the zero");
+    numFibonacci=parseInt(prompt("Let me know any number you want: "));
 }
+function fibo(n1){
 
-function fib(num1){
-    if (num1 == 0){
-         return num1;
+    if (n1 === 1){
+        fibonacciSerie.pop();
+        return fibonacciSerie;
     }
-    else if (num1 == 1){
-        let r = "0, " + num1;
-        return r;
+    else if (n1 === 2){
+        return fibonacciSerie;
     }
-    else if (num1 == 2){
-        let r = "0, " + " 1 " + num1
-        return r;
-    }
-
-    let elem1,elem2 = 1;
-    let sum = 0;
-    for (i=0; i<=n; i++){
-        sum = elem1 + elem2;
-        elem1=elem2; 
-        elem2=sum;
-    return sum;
+    else{
+        for (i=2; i<n1; i++){
+            var popIt1 = fibonacciSerie.pop();
+            var popIt2 = fibonacciSerie.pop();
+            var add =popIt1 + popIt2;
+            fibonacciSerie.push(popIt2);
+            fibonacciSerie.push(popIt1);
+            fibonacciSerie.push(add);
+        }
+        return fibonacciSerie;
     }
 }
-
-console.log(fib(num1));
+console.log(fibo(numFibonacci));
 
 // ○ Entrada:
 // ■ 3
@@ -53,8 +50,8 @@ console.log(fib(num1));
 // ● Al final de tu práctica, tienes que subir el ejercicio a tu repositorio de GitHub.
 // ● Colócalo en un repositorio llamado “logica-programacion-4”
 // Sugerencias:
-// ● La sucesión de Fibonacci es una secuencia infinita de números naturales; a partir del 0 y el 1, se van sumando a
-// pares, de manera que cada número es igual a la suma de sus dos anteriores, de manera que:
+// ● La sucesión de Fibonacci es una secuencia infinita de números naturales; a partir del 0 y el 1, se van addando a
+// pares, de manera que cada número es igual a la adda de sus dos anteriores, de manera que:
 // ○ Sucesión: 0, 1, 1, 2, 3, 5, 8
 // ○ 0 + 1 = 1
 // ○ 1 + 1 = 2

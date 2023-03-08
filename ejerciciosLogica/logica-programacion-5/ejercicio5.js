@@ -13,7 +13,7 @@
 let numberSecret=parseInt(prompt("Escoge un numero secreto: "));
 let num1=parseInt(prompt("Adivina en que numero estoy pensando del 1 al 100: "));
 let isNum=Number.isInteger(num1);
-alert(isNum);
+let count = 0;
 
 while(isNum===false){
     if(isNum===false && Number.isInteger(num1)===false){
@@ -24,6 +24,7 @@ while(isNum===false){
     if(isNum===true){
         if(num1!=numberSecret){
             alert("Ups, el número secreto es incorrecto, vuelve a intentarlo.")
+            count++;
             isNum=false;
         }
         else{
@@ -36,6 +37,7 @@ while(isNum===true){
     if(num1!=numberSecret){
         alert("Ups, el número secreto es incorrecto, vuelve a intentarlo.")
         num1=parseInt(prompt("Adivina en que numero estoy pensando del 1 al 100: "));
+        count++;
         isNum=true;
     }
     else{
@@ -45,7 +47,8 @@ while(isNum===true){
 }
 
 let msj=document.getElementById("mensaje");
-document.write("Este fue el numero secreto "+ numberSecret);
+document.write("Este fue el numero secreto "+ numberSecret + " y el numero de intentos fue de: " + count);
+
 
 
 

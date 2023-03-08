@@ -18,28 +18,46 @@ public class FinDeSemana {
 		○ Salida:
 		■ Faltan 5730 minutos para el fin de semana*/
 	public static void main(String[] args) {
-		Scanner sn1 = new Scanner(System.in);
+		/*Scanner sn1 = new Scanner(System.in);
 		System.out.println("Ingresa un dia de Lunes a Viernes: ");
 		String dia = sn1.next();
 		System.out.println("Ingresa una hora en l formato de 24:00 : ");
 		int horas = sn1.nextInt();
 		System.out.println("Ingresa los minutos en el formato de 0-60");
-		int minutos = sn1.nextInt();
+		int minutos = sn1.nextInt();*/
 		
-		int diaNumber:0;
+		String day = "";
+		day = "Lunes";
 		
-		if (dia === 'Lunes') {
-			diaNumber=1;
-			
-		} else {
-
+		switch (day) {
+		case "Lunes":
+			day = "1";
+			break;
+		case "Martes":
+			day = "2";
+			break;
+		case "Miercoles":
+			day = "3";
+			break;
+		case "Jueves":
+			day = "4";
+			break;
+		case "Viernes":
+			day = "5";
+			break;
+		case "Sabado":
+			day = "6";
+			break;
+		case "Domingo":
+			day = "0";
+		break;
+		default:
+			day = "No se encontraron coincidencias";
+			break;
 		}
-		int tiempoRestante = 0;
 		
-		int minHoras = minutos % 60;
-		int horasDia = horas % 24;
-		int diaNum = dia
-		
-	}
-
+		int numDay = Integer.parseInt(day);
+		System.out.println(day);
+		System.out.println(numDay);
+}
 }
