@@ -5,7 +5,7 @@
 ## I've just finished "Generation Mexico" Bootcamp where I did an ecommerce 🛍️ as a final project [Ecommerce YukArt](https://github.com/luisssSoto/FinalProjectGeneration)
 ## First steps with... [Web Programming](https://github.com/luisssSoto/GenerationCH23) 
 
-**luisssSoto/luisssSoto** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- **luisssSoto/luisssSoto** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
