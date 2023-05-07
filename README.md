@@ -1,7 +1,7 @@
 
 # Welcome to my Git Hub
 
-## I'm currently working with my favorite programming language... Python 🐍 solving different logic excercises [Logci Excercises Python](https://github.com/luisssSoto/HackerrankPython)
+## I'm currently working with my favorite programming language... Python 🐍 solving different logical exercises [Logical Excercises Python](https://github.com/luisssSoto/HackerrankPython)
 ## I've just finished "Generation Mexico" Bootcamp where I did an ecommerce 🛍️ as a final project [Ecommerce YukArt](https://github.com/luisssSoto/FinalProjectGeneration)
 ## First steps with... [Web Programming](https://github.com/luisssSoto/GenerationCH23) 
 ## I'm currently learning in... 🤓 [First Python's Certification](https://github.com/luisssSoto/PCEP-Certified-Entry-Level-Python-Programmer-/blob/main/README.md)
